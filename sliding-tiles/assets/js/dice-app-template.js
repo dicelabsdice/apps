@@ -9,7 +9,7 @@
 
   const translations = {
     es: {
-      appName: 'Sliding Tiles Puzzle', tagline: 'La versión moderna del clásico 15-puzzle: desliza piezas para reconstruir imágenes y resuelve tableros con reglas, rutas y desafíos distintos.', moreInfo: 'Conoce el juego', language: 'Idioma', download: 'Próximamente', demo: 'Jugar demo', privacy: 'Aviso de privacidad',
+      appName: 'Sliding Tiles Puzzle', tagline: 'La versión moderna del clásico 15-puzzle: desliza piezas para reconstruir imágenes y resuelve tableros con reglas, rutas y desafíos distintos.', moreInfo: 'Conoce el juego', language: 'Idioma', download: 'Descargar', demo: 'Jugar demo', privacy: 'Aviso de privacidad',
       detailOneTitle: 'Un catálogo de retos', detailOneText: 'Elige entre colecciones de imágenes y estilos. Cada nivel indica su tamaño, dificultad y reglas antes de empezar.',
       detailTwoTitle: 'El clásico, ampliado', detailTwoText: 'Parte del 15-puzzle clásico: mueve una pieza hacia la celda vacía para recomponer la imagen. Hay tableros pequeños, grandes y con cronómetro.',
       detailThreeTitle: 'Tableros con reglas propias', detailThreeText: 'Algunos niveles añaden túneles que conectan bordes, celdas fijas, recortes, rotaciones y aristas bloqueadas.',
@@ -18,7 +18,7 @@
       detailSixTitle: 'Niveles personalizados', detailSixText: 'Con Premium puedes importar una imagen propia, diseñar la forma del tablero y guardar o editar tu nivel.', contact: 'Contacto', mainEmail: 'Correo principal', technicalEmail: 'Correo técnico'
     },
     en: {
-      appName: 'Sliding Tiles Puzzle', tagline: 'A modern take on the classic 15-puzzle: slide tiles to rebuild images and solve boards with different rules, paths, and challenges.', moreInfo: 'Explore the game', language: 'Language', download: 'Coming soon', demo: 'Play demo', privacy: 'Privacy notice',
+      appName: 'Sliding Tiles Puzzle', tagline: 'A modern take on the classic 15-puzzle: slide tiles to rebuild images and solve boards with different rules, paths, and challenges.', moreInfo: 'Explore the game', language: 'Language', download: 'Download', demo: 'Play demo', privacy: 'Privacy notice',
       detailOneTitle: 'A catalog of challenges', detailOneText: 'Choose from image collections and styles. Every level shows its size, difficulty, and rules before you start.',
       detailTwoTitle: 'The classic, expanded', detailTwoText: 'Built on the classic 15-puzzle: move a tile into the empty cell to rebuild the image. Play small, large, or timed boards.',
       detailThreeTitle: 'Boards with their own rules', detailThreeText: 'Some levels add edge-to-edge tunnels, fixed cells, cropped tiles, rotations, and blocked edges.',
@@ -27,7 +27,7 @@
       detailSixTitle: 'Personalized levels', detailSixText: 'With Premium, import your own image, design the board shape, and save or edit your level.', contact: 'Contact', mainEmail: 'Main email', technicalEmail: 'Technical email'
     },
     fr: {
-      appName: 'Sliding Tiles Puzzle', tagline: 'Une version moderne du 15-puzzle classique : faites glisser les tuiles pour reconstruire des images et résoudre des plateaux aux règles variées.', moreInfo: 'Découvrir le jeu', language: 'Langue', download: 'Bientôt disponible', demo: 'Jouer à la démo', privacy: 'Avis de confidentialité',
+      appName: 'Sliding Tiles Puzzle', tagline: 'Une version moderne du 15-puzzle classique : faites glisser les tuiles pour reconstruire des images et résoudre des plateaux aux règles variées.', moreInfo: 'Découvrir le jeu', language: 'Langue', download: 'Télécharger', demo: 'Jouer à la démo', privacy: 'Avis de confidentialité',
       detailOneTitle: 'Un catalogue de défis', detailOneText: 'Choisissez parmi des collections d’images et des styles. Chaque niveau indique taille, difficulté et règles avant de commencer.',
       detailTwoTitle: 'Le classique, enrichi', detailTwoText: 'Issu du 15-puzzle classique : déplacez une tuile vers la case vide pour reconstruire l’image. Jouez sur des plateaux petits, grands ou chronométrés.',
       detailThreeTitle: 'Des plateaux avec leurs propres règles', detailThreeText: 'Certains niveaux ajoutent des tunnels reliant les bords, cellules fixes, tuiles recadrées, rotations et bords bloqués.',
@@ -36,7 +36,7 @@
       detailSixTitle: 'Niveaux personnalisés', detailSixText: 'Avec Premium, importez votre image, dessinez la forme du plateau et enregistrez ou modifiez votre niveau.', contact: 'Contact', mainEmail: 'E-mail principal', technicalEmail: 'E-mail technique'
     },
     de: {
-      appName: 'Sliding Tiles Puzzle', tagline: 'Eine moderne Version des klassischen 15-Puzzles: Verschiebe Kacheln, setze Bilder zusammen und löse Spielfelder mit unterschiedlichen Regeln und Wegen.', moreInfo: 'Spiel entdecken', language: 'Sprache', download: 'Demnächst', demo: 'Demo spielen', privacy: 'Datenschutzhinweis',
+      appName: 'Sliding Tiles Puzzle', tagline: 'Eine moderne Version des klassischen 15-Puzzles: Verschiebe Kacheln, setze Bilder zusammen und löse Spielfelder mit unterschiedlichen Regeln und Wegen.', moreInfo: 'Spiel entdecken', language: 'Sprache', download: 'Herunterladen', demo: 'Demo spielen', privacy: 'Datenschutzhinweis',
       detailOneTitle: 'Ein Katalog voller Herausforderungen', detailOneText: 'Wähle aus Bildsammlungen und Stilen. Jedes Level zeigt Größe, Schwierigkeit und Regeln vor dem Start.',
       detailTwoTitle: 'Der Klassiker, erweitert', detailTwoText: 'Basierend auf dem klassischen 15-Puzzle: Verschiebe eine Kachel in die leere Zelle, um das Bild wiederherzustellen. Spiele kleine, große oder zeitbegrenzte Felder.',
       detailThreeTitle: 'Spielfelder mit eigenen Regeln', detailThreeText: 'Einige Level bieten Tunnel zwischen den Rändern, feste Zellen, zugeschnittene Kacheln, Drehungen und gesperrte Kanten.',
@@ -45,7 +45,7 @@
       detailSixTitle: 'Eigene Level', detailSixText: 'Mit Premium importierst du ein eigenes Bild, gestaltest die Spielfeldform und speicherst oder bearbeitest dein Level.', contact: 'Kontakt', mainEmail: 'Haupt-E-Mail', technicalEmail: 'Technische E-Mail'
     },
     ru: {
-      appName: 'Sliding Tiles Puzzle', tagline: 'Современная версия классической головоломки «пятнашки»: передвигайте плитки, собирайте изображения и решайте поля с разными правилами и маршрутами.', moreInfo: 'Открыть игру', language: 'Язык', download: 'Скоро', demo: 'Играть в демо', privacy: 'Политика конфиденциальности',
+      appName: 'Sliding Tiles Puzzle', tagline: 'Современная версия классической головоломки «пятнашки»: передвигайте плитки, собирайте изображения и решайте поля с разными правилами и маршрутами.', moreInfo: 'Открыть игру', language: 'Язык', download: 'Скачать', demo: 'Играть в демо', privacy: 'Политика конфиденциальности',
       detailOneTitle: 'Каталог испытаний', detailOneText: 'Выбирайте коллекции изображений и стили. В каждой карточке уровня указаны размер, сложность и правила.',
       detailTwoTitle: 'Классика, расширенная', detailTwoText: 'Основано на классической «пятнашке»: передвиньте плитку в пустую ячейку, чтобы собрать изображение. Есть маленькие, большие и уровни с таймером.',
       detailThreeTitle: 'Поля со своими правилами', detailThreeText: 'Некоторые уровни добавляют туннели между краями, фиксированные ячейки, обрезанные плитки, повороты и заблокированные грани.',
