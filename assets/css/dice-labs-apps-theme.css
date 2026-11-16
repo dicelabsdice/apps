@@ -34,7 +34,7 @@ html[data-theme] .copyright {
 
 html[data-theme="dark"] {
 	color-scheme: dark;
-	--body-bg: linear-gradient(180deg, rgba(4, 5, 7, 0.74), rgba(10, 13, 18, 0.86)), url("../../images/theme-dark-bg.jpg?v=20260830") center top / cover fixed;
+	--body-bg: #000000;
 	--body-text: #ccd4dc;
 	--body-muted: #9aa6b2;
 	--title: #ffffff;
@@ -63,7 +63,7 @@ html[data-theme="dark"] {
 
 html[data-theme="light"] {
 	color-scheme: light;
-	--body-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(236, 241, 246, 0.92)), url("../../images/theme-light-bg.jpg?v=20260830") center top / cover fixed;
+	--body-bg: #ffffff;
 	--body-text: #121921;
 	--body-muted: #506070;
 	--title: #05090d;
@@ -99,10 +99,7 @@ body:before {
 	content: '';
 	position: fixed;
 	inset: 0;
-	background:
-		radial-gradient(circle at 12% 10%, rgba(255, 255, 255, 0.08), transparent 22%),
-		radial-gradient(circle at 88% 2%, rgba(255, 255, 255, 0.05), transparent 24%),
-		linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 40%);
+	background: none;
 	pointer-events: none;
 	z-index: -1;
 }
@@ -136,6 +133,7 @@ b {
 
 #wrapper {
 	position: relative;
+	z-index: 1;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -301,7 +299,90 @@ button:not(.primary):hover {
 }
 
 .tiles {
-	margin-top: 2.75em;
+	margin-top: 1.1em;
+}
+
+/* The decorative scene stays independently centered behind the catalog. */
+.catalog-dice-scene {
+	position: fixed;
+	inset: 0;
+	z-index: 0;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.catalog-die {
+	position: absolute;
+	width: clamp(9rem, 18.2vw, 23rem);
+	aspect-ratio: 1;
+	transform: translate(-50%, -50%);
+	opacity: 0.36;
+}
+
+.catalog-die-left { left: 39.075%; top: 48.133333%; }
+.catalog-die-right { left: 61.15%; top: 54.711111%; }
+
+.catalog-die-motion {
+	position: absolute;
+	inset: 0;
+	transform-origin: 50% 50%;
+}
+
+.catalog-die-left .catalog-die-motion { transform: rotate(34deg); }
+
+.catalog-die-art {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	transition: opacity 0.35s ease;
+}
+
+.catalog-die-gray { opacity: 0; }
+
+html[data-theme="light"] .catalog-die { opacity: 0.48; }
+html[data-theme="light"] .catalog-die-white { opacity: 0; }
+html[data-theme="light"] .catalog-die-gray { opacity: 1; }
+
+@media (prefers-reduced-motion: no-preference) {
+	html[data-catalog-motion="pending"] .catalog-die-motion,
+	html[data-catalog-motion="pending"] .tiles article {
+		opacity: 0 !important;
+	}
+
+	html[data-catalog-motion="ready"] .catalog-die-left .catalog-die-motion {
+		animation: catalog-left-roll 2s 0.4s cubic-bezier(.2, .7, .2, 1) both;
+	}
+
+	html[data-catalog-motion="ready"] .catalog-die-right .catalog-die-motion {
+		animation: catalog-right-arrive 0.9s 0.4s ease-out both;
+	}
+
+	html[data-catalog-motion="ready"] .tiles article {
+		animation: catalog-card-reveal 1.8s calc(1.35s + var(--catalog-stagger, 0s)) ease-out both !important;
+	}
+
+	html[data-catalog-motion="ready"] .tiles article:nth-child(2) { --catalog-stagger: 0.07s; }
+	html[data-catalog-motion="ready"] .tiles article:nth-child(3) { --catalog-stagger: 0.14s; }
+	html[data-catalog-motion="ready"] .tiles article:nth-child(4) { --catalog-stagger: 0.21s; }
+	html[data-catalog-motion="ready"] .tiles article:nth-child(5) { --catalog-stagger: 0.28s; }
+	html[data-catalog-motion="ready"] .tiles article:nth-child(6) { --catalog-stagger: 0.35s; }
+}
+
+@keyframes catalog-left-roll {
+	from { opacity: 0; transform: rotate(-65deg) scale(0.55); }
+	to { opacity: 1; transform: rotate(754deg) scale(1); }
+}
+
+@keyframes catalog-right-arrive {
+	from { opacity: 0; transform: scale(0.6); }
+	to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes catalog-card-reveal {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 .tiles article {
@@ -788,6 +869,13 @@ body:not(.is-touch) .tiles article.app-card.has-preview:hover > a {
 
 	.tiles article {
 		width: 100%;
-		margin: 1.25em 0 0 0;
+		margin: 0.5em 0 0 0;
 	}
+
+	.catalog-die {
+		width: 43vw;
+	}
+
+	.catalog-die-left { left: 35%; top: 47%; }
+	.catalog-die-right { left: 65%; top: 53%; }
 }
