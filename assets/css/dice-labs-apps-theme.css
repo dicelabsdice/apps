@@ -302,6 +302,11 @@ button:not(.primary):hover {
 	margin-top: 0.55em;
 }
 
+/* Override the template's more-specific spacing so the catalog sits higher. */
+#main .tiles {
+	margin-top: -0.75em;
+}
+
 /* The decorative scene stays independently centered behind the catalog. */
 .catalog-dice-scene {
 	position: fixed;
@@ -865,6 +870,10 @@ body:not(.is-touch) .tiles article.app-card.has-preview:hover > a {
 @media screen and (max-width: 600px) {
 	.tiles {
 		margin: 0;
+	}
+
+	#main .tiles {
+		margin-top: -0.25em;
 	}
 
 	.tiles article {
