@@ -299,12 +299,12 @@ button:not(.primary):hover {
 }
 
 .tiles {
-	margin-top: 0.55em;
+	margin-top: -0.90em;
 }
 
 /* Override the template's more-specific spacing so the catalog sits higher. */
 #main .tiles {
-	margin-top: -0.75em;
+	margin-top: -0.90em;
 }
 
 /* The decorative scene stays independently centered behind the catalog. */
@@ -883,6 +883,14 @@ body:not(.is-touch) .tiles article.app-card.has-preview:hover > a {
 
 	.catalog-die {
 		width: 43vw;
+	}
+
+	.catalog-die-left {
+		transform: translate(-50%, -50%) scale(0.7);
+	}
+
+	.catalog-die-right {
+		transform: translate(-50%, -50%) scale(0.7);
 	}
 
 	.catalog-die-left { left: 35%; top: 47%; }
