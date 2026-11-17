@@ -299,7 +299,7 @@ button:not(.primary):hover {
 }
 
 .tiles {
-	margin-top: -0.90em;
+	margin-top: -10em;
 }
 
 /* Override the template's more-specific spacing so the catalog sits higher. */
@@ -886,11 +886,11 @@ body:not(.is-touch) .tiles article.app-card.has-preview:hover > a {
 	}
 
 	.catalog-die-left {
-		transform: translate(-50%, -50%) scale(0.7);
+		transform: translate(-50%, -50%) scale(0.6);
 	}
 
 	.catalog-die-right {
-		transform: translate(-50%, -50%) scale(0.7);
+		transform: translate(-50%, -50%) scale(0.6);
 	}
 
 	.catalog-die-left { left: 35%; top: 47%; }
