@@ -299,7 +299,7 @@ button:not(.primary):hover {
 }
 
 .tiles {
-	margin-top: 1.1em;
+	margin-top: 0.55em;
 }
 
 /* The decorative scene stays independently centered behind the catalog. */
